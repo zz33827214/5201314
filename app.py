@@ -145,8 +145,8 @@ def fu_page():
         st.session_state.page = 'main'
 
 
-    if st.button("大生氣 +2天"):
-        data['fu_days'] += 2
+    if st.button("講話破 +1天"):
+        data['fu_days'] += 1
         save_data()
         st.session_state.page = 'main'
 
@@ -173,4 +173,5 @@ elif st.session_state.page == 'chen':
     chen_page()
 elif st.session_state.page == 'fu':
     fu_page()
+
 
