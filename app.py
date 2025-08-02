@@ -97,6 +97,7 @@ def main_page():
                     st.success("陳龍龍成功兌換！傅鼻鼻今晚過來 🐻 ➜ 🐉")
             else:
                 st.error("陳龍龍沒有足夠的天數可兌換 😢")
+    st.rerun()
 
 # 陳龍龍頁面
 def chen_page():
@@ -173,6 +174,7 @@ elif st.session_state.page == 'chen':
     chen_page()
 elif st.session_state.page == 'fu':
     fu_page()
+
 
 
 
