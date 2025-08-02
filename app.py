@@ -84,8 +84,8 @@ def main_page():
         if exchange_who == "傅鼻鼻":
             if st.session_state.data['fu_days'] >= 1:
                 if st.button("✅ 傅鼻鼻使用 1 天數兌換 陳龍龍過來"):
-                    save_data()
                     st.session_state.data['fu_days'] -= 1
+                    save_data()
                     st.success("傅鼻鼻成功兌換！陳龍龍今晚過來 🐉 ➜ 🐻")
             else:
                 st.error("傅鼻鼻沒有足夠的天數可兌換 😢")
@@ -173,5 +173,6 @@ elif st.session_state.page == 'chen':
     chen_page()
 elif st.session_state.page == 'fu':
     fu_page()
+
 
 
