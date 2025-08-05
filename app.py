@@ -152,18 +152,7 @@ def fu_page():
         save_data()
         st.session_state.page = 'main'
 
-
-    if st.button("不聽話 +1天"):
-        data['fu_days'] += 1
-        save_data()
-        st.session_state.page = 'main'
-
-
-    if st.button("沒帶肉 +10天"):
-        data['fu_days'] += 10
-        save_data()
-        st.session_state.page = 'main'
-
+    
 
     if st.button("⬅️ 返回主頁"):
         st.session_state.page = 'main'
@@ -175,6 +164,7 @@ elif st.session_state.page == 'chen':
     chen_page()
 elif st.session_state.page == 'fu':
     fu_page()
+
 
 
 
